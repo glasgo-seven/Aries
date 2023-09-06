@@ -1,4 +1,4 @@
-package goLeoLib
+package Aries
 
 import (
 	"fmt"
