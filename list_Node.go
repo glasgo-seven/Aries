@@ -1,32 +1,24 @@
 package Aries
 
 
-
-type LinkedListNode struct {
-	Value interface{}
-	Next *LinkedListNode
+type ListNode struct {
+	Value	interface{}
+	Next	*ListNode
+	Prev	*ListNode
 }
 
-func Init_LinkedListNode(value interface{}) LinkedListNode {
-	return LinkedListNode{Value: value, Next: nil}
+func ListNode_Init(value interface{}) *ListNode {
+	return &ListNode{
+		Prev	:	nil,
+		Value	:	value,
+		Next	:	nil,
+	}
 }
 
-func Create_LinkedListNode(value interface{}, next *LinkedListNode) LinkedListNode {
-	return LinkedListNode{Value: value, Next: next}
-}
-
-
-
-type DoublyLinkedListNode struct {
-	Value interface{}
-	Prev *DoublyLinkedListNode
-	Next *DoublyLinkedListNode
-}
-
-func Init_DoublyLinkedListNode(value interface{}) DoublyLinkedListNode {
-	return DoublyLinkedListNode{Value: value, Prev: nil, Next: nil}
-}
-
-func Create_DoublyLinkedListNode(value interface{}, prev *DoublyLinkedListNode, next *DoublyLinkedListNode) DoublyLinkedListNode {
-	return DoublyLinkedListNode{Value: value, Prev: prev, Next: next}
+func ListNode_Create(value interface{}, prev *ListNode, next *ListNode) *ListNode {
+	return &ListNode{
+		Value	:	value,
+		Next	:	next,
+		Prev	:	prev,
+	}
 }
