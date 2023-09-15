@@ -3,6 +3,18 @@ package Aries
 
 
 const (
+	SY_BORDER_VER_SIDE			string	=	"║"
+	SY_BORDER_VER_SIDE_LEFT		string	=	"╣"
+	SY_BORDER_VER_SIDE_RIGHT	string	=	"╠"
+	SY_BORDER_HOR_SIDE			string	=	"═"
+	SY_BORDER_HOR_SIDE_UP		string	=	"╩"
+	SY_BORDER_HOR_SIDE_DOWN		string	=	"╦"
+	SY_BORDER_CROSS				string	=	"╬"
+	SY_BORDER_CORNER_RIGHT_UP	string	=	"╗"
+	SY_BORDER_CORNER_RIGHT_DOWN	string	=	"╝"
+	SY_BORDER_CORNER_LEFT_DOWN	string	=	"╚"
+	SY_BORDER_CORNER_LEFT_UP	string	=	"╔"
+
 	ESC		string	=	"\x1b["
 
 	SCREEN_HOME		string	=	"H"
