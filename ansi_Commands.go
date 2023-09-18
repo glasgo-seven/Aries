@@ -39,6 +39,9 @@ func ANSI_ColoredRGB_BG(r string, g string, b string) string {
 func ANSI_CommandExecute(command string, x string) {
 	fmt.Print(ESC + x + command)
 }
+func ANSI_FormatString(str string, format string, reset string) string {
+	return ESC + format + str +  ESC + reset
+}
 
 
 
