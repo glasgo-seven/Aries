@@ -3,5 +3,5 @@
 .DS_Store
 
 main.go
-_test.go
+*_test.go
 
