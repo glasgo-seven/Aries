@@ -47,3 +47,7 @@ func (l *LinkedList) Append(node *ListNode) {
 		l.Tail().Next = node
 	}
 }
+
+func (l *LinkedList) PopHead() {
+	l.head = l.head.Next
+}
