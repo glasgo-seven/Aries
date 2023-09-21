@@ -50,4 +50,5 @@ func (l *LinkedList) Append(node *ListNode) {
 
 func (l *LinkedList) PopHead() {
 	l.head = l.head.Next
+	l.head.Prev = nil
 }

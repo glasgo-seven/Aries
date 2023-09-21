@@ -1,7 +1,6 @@
 package Aries
 
 
-
 const (
 	SY_BORDER_VER_SIDE			string	=	"║"
 	SY_BORDER_VER_SIDE_LEFT		string	=	"╣"
