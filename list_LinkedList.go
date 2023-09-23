@@ -48,7 +48,15 @@ func (l *LinkedList) Append(node *ListNode) {
 	}
 }
 
-func (l *LinkedList) PopHead() {
-	l.head = l.head.Next
-	l.head.Prev = nil
+func (l *LinkedList) PopHead() *ListNode {
+	ret := l.head
+
+	if l.head.Next != nil {
+		l.head = l.head.Next
+		l.head.Prev = nil
+	} else {
+		l.head = nil
+	}
+	
+	return ret
 }
