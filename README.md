@@ -7,3 +7,4 @@
 * [LOGR](./docs/doc_LOGR.md)
 * [TERM](./docs/doc_TERM.md)
 * [UTIL](./docs/doc_UTILS.md)
+* [MISC](./docs/doc_MISC.md)
